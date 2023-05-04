@@ -48,7 +48,7 @@ public class OrderSagaSaga {
             /* Logic */
             orderCancelCommand.setId(event.getId());
 
-            orderService.orderCancel(event.getId(), orderCancelCommad);
+            orderService.orderCancel(event.getId(), orderCancelCommand);
         }
 
         // Manual Offset Commit //
@@ -85,7 +85,7 @@ public class OrderSagaSaga {
 
             deliveryService.cancelDelivery(
                 event.getOrderId(),
-                cancelDeliveryCommad
+                cancelDeliveryCommand
             );
         }
 
