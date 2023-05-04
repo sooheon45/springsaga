@@ -64,15 +64,11 @@ logging:
 api:
   url:
     Delivery: localhost:0
-api:
-  url:
-    Product: localhost:8082
-api:
-  url:
-    Order: localhost:8081
+    Product: localhost:8083
+    Order: localhost:8082
 
 server:
-  port: 8081
+  port: 8082
 
 ---
 
@@ -121,13 +117,10 @@ spring:
           contentType: application/json
 
 
+
 api:
   url:
     : :8080
-api:
-  url:
     product: product:8080
-api:
-  url:
     order: order:8080
 

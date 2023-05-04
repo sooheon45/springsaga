@@ -1,5 +1,5 @@
 server:
-  port: 8088
+  port: 8080
 
 ---
 
@@ -9,15 +9,15 @@ spring:
     gateway:
       routes:
         - id: Order
-          uri: http://localhost:8081
+          uri: http://localhost:8082
           predicates:
             - Path=/orders/**, 
         - id: Product
-          uri: http://localhost:8082
+          uri: http://localhost:8083
           predicates:
             - Path=/products/**, 
         - id: frontend
-          uri: http://localhost:8080
+          uri: http://localhost:8081
           predicates:
             - Path=/**
       globalcors:

@@ -61,9 +61,11 @@ logging:
     org.hibernate.type: trace
     org.springframework.cloud: debug
 
+api:
+  url:
 
 server:
-  port: 8082
+  port: 8083
 
 ---
 
@@ -112,4 +114,7 @@ spring:
           contentType: application/json
 
 
+
+api:
+  url:
 
